@@ -71,8 +71,12 @@
     justify-content: center;
     transition: border .15s linear;
     position: relative;
-    display: inline-flex;
+    text-decoration: none;
+    display: flex;
+    margin: 0.50rem;
+    padding: .25rem;
     align-items: center;
+    color: white;
     background-color:#014460;
     border-color:#014460;
     background-clip: border-box;
