@@ -1,4 +1,6 @@
 import React from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
+import { connect } from "react-redux";
 import {
 Nav,
 NavLink,
@@ -7,10 +9,21 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
-
-const Navbar = () => {
+const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } = useAuth0();
+const Navbar = props => {
+const { oidc } = props;
 return (
 	<>
+	{oidc.user ? (
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Signed in as:{" "}
+            <a href="#login">
+              {oidc.user ? oidc.user.profile.unique_name : ""}
+            </a>
+          </Navbar.Text>
+        </Navbar.Collapse>
+      ) : null}
 	<Nav>
 		<Bars />
 
@@ -19,7 +32,7 @@ return (
 			Home
 		</NavLink>
 		<NavLink to='/events' activeStyle>
-			Events
+			
 		</NavLink>
 		{/* Second Nav */}
 		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
@@ -27,9 +40,16 @@ return (
 		<NavBtn>
 		<NavBtnLink to="/signin">CWG Community</NavBtnLink>
 		</NavBtn>
+		{ if (isAuthenticated) }
 	</Nav>
 	</>
 );
 };
+function mapStateToProps(state) {
+	return {
+	  oidc: state.oidc
+	};
+  }
+  
 
-export default Navbar;
+export default connect(mapStateToProps)(Navbar);
