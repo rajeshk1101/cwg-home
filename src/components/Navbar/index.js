@@ -15,6 +15,9 @@ return (
 		<Bars />
 
 		<NavMenu>
+		<NavLink to='/events' activeStyle>
+			Events
+		</NavLink>
 		{/* Second Nav */}
 		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 		</NavMenu>
