@@ -15,6 +15,9 @@ return (
 		<Bars />
 
 		<NavMenu>
+        <NavLink to='/index' activeStyle>
+			Home
+		</NavLink>
 		<NavLink to='/events' activeStyle>
 			Events
 		</NavLink>
