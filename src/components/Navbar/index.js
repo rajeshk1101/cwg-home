@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from "react-redux";
+import { useAuth0 } from '@auth0/auth0-react';
 import {
 Nav,
 NavLink,
@@ -8,16 +8,16 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
-const Navbar = props => {
-const { oidc } = props;
+const { isAuthenticated, user} = useAuth0();
+const Navbar = () => {
 return (
 	<>
-	{oidc.user ? (
+	{isAuthenticated ? (
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             Signed in as:{" "}
             <a href="#login">
-              {oidc.user ? oidc.user.profile.unique_name : ""}
+              {user ? user.name : ""}
             </a>
           </Navbar.Text>
         </Navbar.Collapse>
