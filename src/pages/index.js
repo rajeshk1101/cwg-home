@@ -1,7 +1,4 @@
 import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
-
-const {  user} = useAuth0();
 
 const Home = () => {
 return (
@@ -13,7 +10,7 @@ return (
 		height: '100vh'
 	}}
 	>
-	<h1>Welcome to CWG {user.name}</h1>
+	<h1>Welcome to CWG</h1>
 	</div>
 );
 };
