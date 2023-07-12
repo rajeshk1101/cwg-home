@@ -22,16 +22,11 @@ return (
 		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 		</NavMenu>
 		<NavBtn>
-		<NavBtnLink path="/signin" element={<About />} >CWG Community</NavBtnLink>
+		<NavBtnLink to="/signin">CWG Community</NavBtnLink>
 		</NavBtn>
 	</Nav>
 	</>
 );
 };
-
-function About() {
-    window.location.href = 'https://cabinetworksgroup--itedev.sandbox.my.site.com/test';
-    return null;
-  }
 
 export default Navbar;
