@@ -9,10 +9,6 @@
             "route": "/*",
             "rewrite": "/index.html",
             "allowedRoles": ["authenticated"]
-        },
-        {
-          "route": "/logout",
-          "redirect": "/.auth/logout"
         }
     ],
     "auth": {
