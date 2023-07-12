@@ -1,5 +1,4 @@
 import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
 import {
 Nav,
 NavLink,
@@ -8,20 +7,9 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
-const { isAuthenticated, user} = useAuth0();
 const Navbar = () => {
 return (
 	<>
-	{isAuthenticated ? (
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Signed in as:{" "}
-            <a href="#login">
-              {user ? user.name : ""}
-            </a>
-          </Navbar.Text>
-        </Navbar.Collapse>
-      ) : null}
 	<Nav>
 		<Bars />
 
