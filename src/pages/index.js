@@ -6,8 +6,7 @@ return (
 	style={{
 		display: 'grid',
 		justifyContent: 'center',
-		alignItems: 'center',
-		height: '100vh'
+		alignItems: 'center'
 	}}
 	>
 	<h1>Welcome to CWG</h1>
