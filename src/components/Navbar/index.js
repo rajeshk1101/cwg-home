@@ -24,13 +24,13 @@ const Navbar = () => {
 		<Nav>
 			<Bars />
 			<NavMenu>
-				<NavLink  activeStyle>
+				<NavLink  >
 					Welcome {data ? data.clientPrincipal ? data.clientPrincipal.userDetails : 'No Claim Priciple' : 'No data' }
 				</NavLink>
-				<NavLink to='/' activeStyle>
+				<NavLink to='/' >
 					Home
 				</NavLink>
-				<NavLink to='/events' activeStyle>
+				<NavLink to='/events' >
 					Events
 				</NavLink>
 				{/* Second Nav */}

@@ -14,6 +14,7 @@ transition: .5s ease;
 overflow-x: hidden;
 padding-top: 20px;
 display: flex;
+justify-content: space-between;
 flex-direction: column;
 align-items: center;
 `;
@@ -24,10 +25,11 @@ display: block;
 text-decoration: none;
 border-radius: .25rem;
 background: transparent;
-padding: .25rem;
+padding: 0.5rem;
+margin: 4rem;
 transition: background .05s linear;
 cursor: pointer;
-&.active {
+&.active :hover {
 	box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.16), 0 0 3px #0070d2;
 }
 `;
