@@ -7,7 +7,6 @@
         },
         {
             "route": "/*",
-            "rewrite": "/index.html",
             "allowedRoles": ["authenticated"]
         }
     ],
@@ -21,7 +20,7 @@
                   "clientSecretSettingName": "AADB2C_PROVIDER_CLIENT_SECRET"
                 },
                 "openIdConnectConfiguration": {
-                  "wellKnownOpenIdConfiguration": "https://cwgb2c.b2clogin.com/cwgb2c.onmicrosoft.com/b2c_1_itedev_signin_signup/v2.0/.well-known/openid-configuration"
+                  "wellKnownOpenIdConfiguration": "https://cwgb2c.b2clogin.com/cwgb2c.onmicrosoft.com/b2c_1a_signup_signin/v2.0/.well-known/openid-configuration"
                 }
               },
               "login": {
