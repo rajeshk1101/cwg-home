@@ -1,4 +1,20 @@
 {   
+    "trailingSlash": "auto",
+    "routes": [
+        {
+            "route": "/login",
+            "rewrite": "/.auth/login/aadb2c"
+        },
+        {
+            "route": "/*",
+            "rewrite": "/index.html",
+            "allowedRoles": ["authenticated"]
+        },
+        {
+          "route": "/logout",
+          "redirect": "/.auth/logout"
+        }
+    ],
     "auth": {
         "identityProviders": {
           "customOpenIdConnectProviders": {
