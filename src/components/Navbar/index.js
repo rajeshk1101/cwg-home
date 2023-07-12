@@ -4,8 +4,6 @@ Nav,
 NavLink,
 Bars,
 NavMenu,
-NavBtn,
-NavBtnLink,
 } from './NavbarElements';
 const Navbar = () => {	
 	const url = "/.auth/me";
@@ -35,10 +33,6 @@ const Navbar = () => {
 				</NavLink>
 				{/* Second Nav */}
 			</NavMenu>
-			<NavBtn>
-				<NavBtnLink to="/signin">CWG Community</NavBtnLink>
-				<NavBtnLink to='/logout'>Logout</NavBtnLink> 
-			</NavBtn>
 		</Nav>
 		</>
 	);

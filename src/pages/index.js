@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './App.css';
 const Home = () => {
 return (
 	<div
@@ -11,6 +11,10 @@ return (
 	}}
 	>
 	<h1>Welcome to CWG</h1>
+	<div>
+		<a class="cus-button" href="/signin">CWG Community</a>
+		<a class="cus-button" href="/logout">Logout</a>
+	</div>
 	</div>
 );
 };
