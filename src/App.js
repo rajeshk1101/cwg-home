@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Events from './pages/events';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' exact element={<Home/>}/>
+        <Route path='/events' element={<Events />} />
         <Route path='/signin' element={<About />} />
       </Routes>
     </Router>

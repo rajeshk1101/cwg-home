@@ -12,19 +12,18 @@ return (
 	<>
 	<Nav>
 		<Bars />
-
 		<NavMenu>
-        <NavLink to='/' activeStyle>
-			Home
-		</NavLink>
-		<NavLink to='/events' activeStyle>
-			
-		</NavLink>
-		{/* Second Nav */}
-		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+			<NavLink to='/' activeStyle>
+				Home
+			</NavLink>
+			<NavLink to='/events' activeStyle>
+				Events
+			</NavLink>
+			{/* Second Nav */}
+			<NavBtnLink to='/logout'>Logout</NavBtnLink> 
 		</NavMenu>
 		<NavBtn>
-		<NavBtnLink to="/signin">CWG Community</NavBtnLink>
+			<NavBtnLink to="/signin">CWG Community</NavBtnLink>
 		</NavBtn>
 	</Nav>
 	</>
