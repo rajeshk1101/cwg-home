@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import {
 Nav,
 NavLink,
@@ -7,12 +7,26 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
+const url = "/.auth/me";
+const [data, setData] = useState([]);
+
+const fetchInfo = () => {
+	return fetch(url)
+		.then((res) => res.json())
+		.then((d) => setData(d))
+}
+useEffect(() => {
+	fetchInfo();
+	}, []);
 const Navbar = () => {
 return (
 	<>
 	<Nav>
 		<Bars />
 		<NavMenu>
+			<NavLink  activeStyle>
+				Welcome { data ? data.clientPrincipal.userDetails : 'Test'}
+			</NavLink>
 			<NavLink to='/' activeStyle>
 				Home
 			</NavLink>

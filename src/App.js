@@ -12,6 +12,7 @@ function App() {
         <Route path='/' exact element={<Home/>}/>
         <Route path='/events' element={<Events />} />
         <Route path='/signin' element={<About />} />
+        <Route path='/logout' element={<Logout />} />
       </Routes>
     </Router>
   );
@@ -20,7 +21,12 @@ function App() {
 
 function About() {
   console.log('On redirect');
-  window.location.href = 'https://cabinetworksgroup--itedev.sandbox.my.site.com/test';
+  window.location.href = 'https://cabinetworksgroup--data2.sandbox.my.site.com/cwg';
+  return null;
+}
+function Logout() {
+  console.log('On redirect');
+  window.location.href = '/.auth/logout';
   return null;
 }
 export default App;

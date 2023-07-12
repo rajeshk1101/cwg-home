@@ -23,5 +23,5 @@ async function getUserInfo() {
     return clientPrincipal;
   }
   
-console.log( getUserInfo());
+console.log( JSON.stringify(getUserInfo()));
 export default Events;
