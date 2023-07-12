@@ -17,6 +17,7 @@ const fetchInfo = () => {
 }
 useEffect(() => {
 	fetchInfo();
+	callBackonEnd();
 	}, []);
 const Navbar = () => {
 return (
@@ -24,9 +25,6 @@ return (
 	<Nav>
 		<Bars />
 		<NavMenu>
-			<NavLink  activeStyle>
-				Welcome { data ? data.clientPrincipal.userDetails : 'Test'}
-			</NavLink>
 			<NavLink to='/' activeStyle>
 				Home
 			</NavLink>
@@ -43,4 +41,7 @@ return (
 	</>
 );
 };
+function callBackonEnd(){
+	console.log('On Nav '+ JSON.stringify(data));
+}
 export default Navbar;
