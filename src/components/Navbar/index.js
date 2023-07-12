@@ -42,11 +42,4 @@ return (
 	</>
 );
 };
-function mapStateToProps(state) {
-	return {
-	  oidc: state.oidc
-	};
-  }
-  
-
-export default connect(mapStateToProps)(Navbar);
+export default Navbar;
