@@ -18,6 +18,7 @@ async function getUserInfo() {
     const response = await fetch('/.auth/me');
     console.log('response',response);
     const payload = await response.json();
+    console.log(await JSON.stringify(payload));
     const { clientPrincipal } = payload;
     return clientPrincipal;
   }

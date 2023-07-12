@@ -20,10 +20,10 @@ return (
 				Events
 			</NavLink>
 			{/* Second Nav */}
-			<NavBtnLink to='/logout'>Logout</NavBtnLink> 
 		</NavMenu>
 		<NavBtn>
 			<NavBtnLink to="/signin">CWG Community</NavBtnLink>
+			<NavBtnLink to='/logout'>Logout</NavBtnLink> 
 		</NavBtn>
 	</Nav>
 	</>
