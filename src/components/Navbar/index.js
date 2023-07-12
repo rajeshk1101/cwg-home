@@ -1,5 +1,4 @@
 import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
 import { connect } from "react-redux";
 import {
 Nav,
@@ -9,7 +8,6 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
-const { isLoading, isAuthenticated, error, user, loginWithRedirect, logout } = useAuth0();
 const Navbar = props => {
 const { oidc } = props;
 return (
@@ -40,7 +38,6 @@ return (
 		<NavBtn>
 		<NavBtnLink to="/signin">CWG Community</NavBtnLink>
 		</NavBtn>
-		{ if (isAuthenticated) }
 	</Nav>
 	</>
 );
