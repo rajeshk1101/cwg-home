@@ -21,15 +21,6 @@ return (
 		<NavLink to='/events' activeStyle>
 			Events
 		</NavLink>
-		<NavLink to='/annual' activeStyle>
-			Annual Report
-		</NavLink>
-		<NavLink to='/team' activeStyle>
-			Teams
-		</NavLink>
-		<NavLink to='/blogs' activeStyle>
-			Blogs
-		</NavLink>
 		<NavLink to='/sign-up' activeStyle>
 			Sign Up
 		</NavLink>
@@ -37,11 +28,16 @@ return (
 		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
 		</NavMenu>
 		<NavBtn>
-		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
+		<NavBtnLink path="/signin" element={<About />} >CWG Community</NavBtnLink>
 		</NavBtn>
 	</Nav>
 	</>
 );
 };
+
+function About() {
+    window.location.href = 'https://cabinetworksgroup--itedev.sandbox.my.site.com/test';
+    return null;
+  }
 
 export default Navbar;
