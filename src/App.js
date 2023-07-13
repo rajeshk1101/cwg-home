@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path='/' exact element={<Home/>}/>
         <Route path='/events' element={<Events />} />
-        <Route path='/signin' element={<About />} />
+        <Route path='/signin' element={<CWG />} />
         <Route path='/logout' element={<Logout />} />
       </Routes>
     </Router>
@@ -19,7 +19,7 @@ function App() {
   //return (<><div>Welcome to cwg portal</div><a href="https://cabinetworksgroup--itedev.sandbox.my.site.com/test">Click here to login to salesforce</a></>);
 }
 
-function About() {
+function CWG() {
   console.log('On redirect');
   window.location.href = 'https://cabinetworksgroup--data2.sandbox.my.site.com/cwg';
   return null;

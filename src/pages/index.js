@@ -11,7 +11,6 @@ return (
 	>
 	<h1>Welcome to CWG</h1>
 	<div>
-		<a class="cus-button" href="/signin">CWG Community</a>
 		<a class="cus-button" href="/logout">Logout</a>
 	</div>
 	</div>
