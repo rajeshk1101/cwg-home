@@ -21,7 +21,7 @@ function App() {
 
 function CWG() {
   console.log('On redirect');
-  window.location.href = 'https://cabinetworksgroup--data2.sandbox.my.site.com/cwg';
+  window.location.href = 'https://cabinetworksgroup--data2.sandbox.my.site.com/cwg/services/auth/sso/Azure_AD_B2C';
   return null;
 }
 function Logout() {
