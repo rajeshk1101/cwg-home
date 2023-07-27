@@ -12,6 +12,7 @@ function App() {
         <Route path='/' exact element={<Home/>}/>
         <Route path='/events' element={<Events />} />
         <Route path='/signin' element={<CWG />} />
+        <Route path='/cwg' element={<CWGDIRECT />} />
         <Route path='/logout' element={<Logout />} />
       </Routes>
     </Router>
@@ -22,6 +23,11 @@ function App() {
 function CWG() {
   console.log('On redirect');
   window.location.href = 'https://cabinetworksgroup--data2.sandbox.my.site.com/cwg/services/auth/sso/Azure_AD_B2C';
+  return null;
+}
+function CWGDIRECT() {
+  console.log('On redirect');
+  window.location.href = 'https://cabinetworksgroup--data2.sandbox.my.site.com/cwg/s/';
   return null;
 }
 function Logout() {

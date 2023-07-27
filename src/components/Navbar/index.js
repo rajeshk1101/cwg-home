@@ -31,8 +31,11 @@ const Navbar = () => {
 				<NavLink to='/events' >
 					Events
 				</NavLink>
-				<NavLink to='/signin' >
+				<NavLink to='/cwg' >
 					CWG Community
+				</NavLink>
+				<NavLink to='/signin' >
+					CWG Community Auth
 				</NavLink>
 				{/* Second Nav */}
 			</NavMenu>
